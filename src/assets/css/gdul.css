@@ -1,0 +1,185 @@
+﻿@charset "UTF-8"; /*20170323*/
+
+/*cssreset*/
+html,body {color:#333; background:#fff;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {margin:0; padding:0;}
+body,button,input,select,textarea,li,dt,dd,div,td,p,span {font-size:14px; font-family:Microsoft Yahei,arial,verdana;}
+h1,h2,h3,h4,h5,h6 {font-size:100%; font-weight:normal; font-family:Microsoft Yahei,arial,verdana;}
+address,cite,dfn,em,var {font-style:normal;}
+code,kbd,pre,samp {font-family:courier new,courier,monospace;}
+ul,ol {list-style:none outside none;}
+span {font-size:100%;}
+a {color:#333; text-decoration:none; hide-focus:expression(this.hideFocus=true); outline:none; -webkit-transition:all 0.3s; transition:all 0.3s;}
+a:hover {color:#3c91e6; text-decoration:none;}
+a:focus {outline:0;}
+legend {color:#666;}
+fieldset,img {border:0 none;}
+img {vertical-align:bottom;}
+button,input,select,textarea {margin:0; padding:0; outline:none; vertical-align:middle;}
+button {cursor:pointer;}
+input[type="radio"],input[type="checkbox"] {position:relative; top:-2px;}
+table {border-collapse:collapse; border-spacing:0;}
+
+/*font*/
+.fs12 {font-size:12px;}
+.fs14 {font-size:14px;}
+.fs16 {font-size:16px;}
+.fs24 {font-size:24px;}
+.ffy {font-family:tahoma,arial,sans-serif;}
+
+/*color*/
+.cfff {color:#fff;}
+.c666 {color:#666;}
+.c999 {color:#999;}
+.cdc4741 {color:#dc4741;}
+.cb3b5ba {color:#b3b5ba;}
+
+/*link-color*/
+a.c666 {color:#666;}
+a.c666:hover {color:#06c;}
+
+/*control*/
+.input {height:18px; line-height:18px; padding:3px 5px; border:1px solid #ddd;}
+.select {padding:2px; border:1px solid #ddd;}
+.textarea {padding:5px; border:1px solid #ddd; color:#666;}
+
+/*ellipsis*/
+.ellipsis {overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+/*overflow*/
+.ofvisible {overflow:visible;}
+
+/*cover-background*/
+.coverbg {position:absolute; top:0; left:0; z-index:98; width:100%; height:100%; background:rgba(0,0,0,.5)}
+
+/*float*/
+.fl {float:left;}
+.fr {float:right;}
+
+/*margin-padding*/
+.mt10 {margin-top:10px;}
+.mr10 {margin-right:10px;}
+.mb10 {margin-bottom:10px;}
+.ml10 {margin-left:10px;}
+.mt20 {margin-top:20px;}
+.mt30 {margin-top:30px;}
+.mt45 {margin-top:45px;}
+.mt60 {margin-top:60px;}
+.pt10 {padding-top:10px;}
+.pr10 {padding-right:10px;}
+.pb10 {padding-bottom:10px;}
+.pb80 {padding-bottom:80px;}
+.pl10 {padding-left:10px;}
+.ptb50 {padding:50px 0;}
+.ml100 {margin-left:100px;}
+
+/*text-alignment*/
+.txtl {text-align:left;}
+.txtc {text-align:center;}
+.txtr {text-align:right;}
+
+/*layout*/
+.gdul_layout {clear:both; position:relative; width:1200px; margin:0 auto;}
+.gdul_layout:after,.clearfix:after {clear:both; content:"."; display:block; height:0; visibility:hidden;}
+.clearfix {zoom:1;}
+.checkbox,.radio {display:inline-block; margin-right:10px;}
+.checkbox input,.radio input {position:absolute; top:-9999px; left:-9999px;}
+.checkbox .cklabel,.radio .rdlabel {display:inline-block; cursor:pointer;}
+.checkbox .icon,.radio .icon {display:inline-block; margin:0 0 0 10px; width:14px; height:14px; background:url(../images/gdul_sel.png) 0 -14px; vertical-align:middle;}
+.checkbox .cklabel.on .icon,.radio .rdlabel.on .icon {background-position:0 0;}
+
+/*index*/
+.gdul_header {position:relative; height:65px; background:#45a2ff;}
+.gdul_header a {float:left; margin:18px 0 0 20px;}
+.gdul_body {position:relative; padding:0 0 0 200px; height:100%;}
+.gdul_sidebar {position:absolute; left:0;top: 0;bottom: 0; width:199px; border-right:1px solid #d8dfea; background:#f4f7fc;}
+.gdul_sidebar .nav li {position:relative; height:45px; line-height:45px; font-size:16px;}
+.gdul_sidebar .nav li a {display:block; padding:0 0 0 55px; color:#4f606e;}
+.gdul_sidebar .nav li i {position:absolute; left:23px; top:14px; font-size:20px; color:#5b667c;}
+.gdul_sidebar .nav li .router-link-exact-active {background:#dbe4f3; color:#3c91e6;}
+.gdul_sidebar .nav li .router-link-exact-active i {color:#3c91e6;}
+.gdul_sidebar .nav li:hover {background:#e6ebf5;}
+.gdul_sidebar .volume {position:absolute; bottom:30px; left:22px;}
+.gdul_sidebar .volume p {padding-bottom:8px; font-size:14px; color:#424e67;}
+.gdul_sidebar .volume p span {font-size:12px;}
+.gdul_sidebar .volume .bar {position:relative; width:155px; height:8px; background:#d7dbdf; border-radius:50px;}
+.gdul_sidebar .volume .bar span {position:absolute; left:0; top:0; height:8px; background:#3c91e6; border-radius:50px; z-index:1;}
+.gdul_main {height:100%; min-height:100%;}
+.gdul_location {height:44px; line-height:44px; background:#f4f7fc; border-bottom:1px #d8dfea solid; color:#999; padding-left:20px;}
+.gdul_location a {color:#3c91e6;}
+.gdul_location a:hover {text-decoration:underline;}
+.gdul_location i {color:#bababa; font-size:14px;}
+.gdul_cont {padding:20px;}
+.gdul_btnlist {padding-bottom:20px;}
+.gdul_btng,.gdul_btnbk {display:inline-block; height:33px; line-height:33px; border:1px #ccc solid; border-radius:3px; color:#454545; font-size:14px; padding:0 18px; margin-right:10px;}
+.gdul_btng i,.gdul_btnbk i {color:#5b667c; margin-right:5px; font-size:16px;}
+.gdul_btng i {color:#fff;}
+.gdul_btng {border:1px #46cd71 solid; background:#46cd71; color:#fff;}
+.gdul_btng:hover {color:#fff; background:#2bc25b;}
+.gdul_btnbk:hover i {color:#3c91e6;}
+.gdul_tablist {overflow:hidden;}
+.gdul_tablist .item {position:relative; height:45px; line-height:45px; padding:0 40px 0 10px; border-bottom:1px #f2f6fd solid; cursor:pointer;}
+.gdul_tablist .item_tit {float:left; width:35%;}
+.gdul_tablist .label {float:left; width:34px; text-align:center;}
+.gdul_tablist .type {float:left; width:25px; height:25px; text-align:center; margin:10px 15px 0 3px;}
+.gdul_tablist .type img {float:left;}
+.gdul_tablist .name {float:left; line-height:45px;}
+.gdul_tablist .item_info {float:left; width:65%; color:#74787C; font-size:12px; text-align:right;}
+.gdul_tablist .item_info .info_list {display:inline-block;}
+.gdul_tablist .item_info .info_list .act {margin:0 20px 0 0; color:#5b667c;}
+.gdul_tablist .item_info .info_list .act:hover {color:#3c91e6;}
+.gdul_tablist .item_info .info_size {width:9%; margin-left:5%;}
+.gdul_tablist .item_info .info_time {width:115px; margin-left:10%;}
+.gdul_tablist .item_info .info_icon {display:none;}
+.gdul_tablist .itemhd {height:45px; line-height:45px; padding:0 40px 0 10px; border-bottom:1px #f2f6fd solid;}
+.gdul_tablist .itemhd .info_list {text-align:center;}
+.gdul_tablist .itemhd .info_size {text-align:right;}
+.gdul_tablist .cur {background:#f4f7fc;}
+.gdul_popup {position:absolute; left:15%; top:40%; width:70%; height:520px; background:#fff; border-radius:5px; z-index:99;}
+.gdul_popup .hd {height:50px; line-height:50px; background:#f7faff; border-bottom:1px #c4dbfe solid; padding:0 15px 0 20px; overflow:hidden; border-radius:5px 5px 0 0;}
+.gdul_popup .hd span {float:left; font-size:16px; color:#454545;}
+.gdul_popup .hd i {color:#5f7094; font-size:14px;}
+.gdul_popup .popbtn {position:absolute; bottom:20px; width:100%; text-align:center;}
+.gdul_popup .popbtn .gdul_btng,.gdul_popup .popbtn .gdul_btnbk {padding:0 40px;}
+.gdul_popup dl {padding:40px 0 0 40px;}
+.gdul_popup dt {font-size:16px; color:#454545; padding-bottom:8px;}
+.gdul_popup dd {color:#999;}
+.gdul_popupfile { margin-top:-160px;}
+.gdul_popupfile .cont {padding:0px 20px 0;width: 25%; float: left;}
+.gdul_popupfile .cont .filename {margin-top:15px; border:1px #eee solid; height:35px; line-height:35px; font-size:12px; color:#999; padding-left:12px;}
+.gdul_filecata {border:1px #eee solid; border-top:none; height:320px; overflow-y:auto; padding:5px 12px;}
+.gdul_filecata li {position:relative; padding-left:15px; cursor:pointer;}
+.gdul_filecata li .item {line-height:24px; font-size:12px;}
+.gdul_filecata li i {position:absolute; left:0px; top:5px; color:#5f7094; font-size:14px;}
+.gdul_filecata li .cur {background:#f7faff;}
+
+.gdul_popup_bin {position:absolute; left:35%; top:40%; width:30%; height:220px; background:#fff; border-radius:5px; z-index:99;}
+.gdul_popup_bin .hd {height:50px; line-height:50px; background:#f7faff; border-bottom:1px #c4dbfe solid; padding:0 15px 0 20px; overflow:hidden; border-radius:5px 5px 0 0;}
+.gdul_popup_bin .hd span {float:left; font-size:16px; color:#454545;}
+.gdul_popup_bin .hd i {color:#5f7094; font-size:14px;}
+.gdul_popup_bin .popbtn {position:absolute; bottom:20px; width:100%; text-align:center;}
+.gdul_popup_bin .popbtn .gdul_btng,.gdul_popup .popbtn .gdul_btnbk {padding:0 40px;}
+.gdul_popup_bin dl {padding:40px 0 0 40px;}
+.gdul_popup_bin dt {font-size:16px; color:#454545; padding-bottom:8px;}
+.gdul_popup_bin dd {color:#999;}
+
+.gdul_popup_move {position:absolute; left:35%; top:40%; width:30%; height:420px; background:#fff; border-radius:5px; z-index:99;}
+.gdul_popup_move .hd {height:50px; line-height:50px; background:#f7faff; border-bottom:1px #c4dbfe solid; padding:0 15px 0 20px; overflow:hidden; border-radius:5px 5px 0 0;}
+.gdul_popup_move .hd span {float:left; font-size:16px; color:#454545;}
+.gdul_popup_move .hd i {color:#5f7094; font-size:14px;}
+.gdul_popup_move .popbtn {position:absolute; bottom:20px; width:100%; text-align:center;}
+.gdul_popup_move .popbtn .gdul_btng,.gdul_popup .popbtn .gdul_btnbk {padding:0 40px;}
+.gdul_popup_move dl {padding:40px 0 0 40px;}
+.gdul_popup_move dt {font-size:16px; color:#454545; padding-bottom:8px;}
+.gdul_popup_move dd {color:#999;}
+.gdul_popupfile_move { margin-top:-160px;}
+.gdul_popupfile_move .cont {padding:0px 20px 0;width: 90%; float: left;}
+.gdul_popupfile_move .cont .filename {margin-top:15px; border:1px #eee solid; height:35px; line-height:35px; font-size:12px; color:#999; padding-left:12px;}
+.gdul_filecata_move {border:1px #eee solid; border-top:none; height:200px; overflow-y:auto; padding:5px 12px;}
+.gdul_filecata_move li {position:relative; padding-left:15px; cursor:pointer;}
+.gdul_filecata_move li .item {line-height:24px; font-size:12px;}
+.gdul_filecata_move li i {position:absolute; left:0px; top:5px; color:#5f7094; font-size:14px;}
+.gdul_filecata_move li .cur {background:#f7faff;}
+
+.gdul_poptips {position:absolute; left:50%; top:50%; margin-left:-160px; margin-top:-22px; width:320px; height:45px; line-height:45px; background:#fff; border-radius:50px; text-align:center; z-index:100;}
+.gdul_poptips i {color:#46cd71; font-size:20px; margin-right:10px;}
